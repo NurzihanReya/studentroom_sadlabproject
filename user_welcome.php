@@ -67,7 +67,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
     <!-- Category container start-->
     <div class="container my-4" id="ques">
         <h2 class="text-center my-4">Student Room - Browse Categories</h2>
-        <div class="row my-4">
+        <div class="row">
 
             <?php 
          
@@ -76,8 +76,8 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
                   <div class="card" style="width: 18rem;">
                   <img src="img/card.jpg" class="d-block w-100" alt="...">
                       <div class="card-body">
-                          <h5 class="card-title"><a href="mocktest.php"</a>Mock Test</h5>
-                          
+                          <h5 class="card-title"><a href="mocktest.php">Mock Test</a></h5>
+                          <p>Perform a mock test and review your answers.</p>
                           <a href="mocktest.php" class="btn btn-primary">View Section</a>
                       </div>
                   </div>
@@ -87,8 +87,8 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
                   <div class="card" style="width: 18rem;">
                   <img src="img/card.jpg" class="d-block w-100" alt="...">
                       <div class="card-body">
-                          <h5 class="card-title"><a href="questionbank.php"</a>Question Bank</h5>
-                          
+                          <h5 class="card-title"><a href="questionbank.php">Question Bank</a></h5>
+                          <p>Solve previous questions and take a better preparation.</p>
                           <a href="questionbank.php" class="btn btn-primary">View Section</a>
                       </div>
                   </div>
@@ -98,8 +98,8 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
                   <div class="card" style="width: 18rem;">
                   <img src="img/card.jpg" class="d-block w-100" alt="...">
                       <div class="card-body">
-                          <h5 class="card-title"><a href="researchupdate.php"</a>Research Update</h5>
-                         
+                          <h5 class="card-title"><a href="researchupdate.php">Research Update</a></h5>
+                          <p>See the latest researches of UIU and plan yours.</p>
                           <a href="researchupdate.php" class="btn btn-primary">View Section</a>
                       </div>
                   </div>
@@ -109,8 +109,8 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
                   <div class="card" style="width: 18rem;">
                   <img src="img/card.jpg" class="d-block w-100" alt="...">
                       <div class="card-body">
-                          <h5 class="card-title"><a href="forum.php"</a>Discussion Forum</h5>
-                          
+                          <h5 class="card-title"><a href="forum.php">Discussion Forum</a></h5>
+                          <p>Discuss your study related concerns here.</p>
                           <a href="forum.php" class="btn btn-primary">View Section</a>
                       </div>
                   </div>
@@ -120,8 +120,8 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
                   <div class="card" style="width: 18rem;">
                   <img src="img/card.jpg" class="d-block w-100" alt="...">
                       <div class="card-body">
-                          <h5 class="card-title"><a href="simulation.php"</a>Simulations</h5>
-                          
+                          <h5 class="card-title"><a href="simulation.php">Simulations</a></h5>
+                          <p>Have a better understanding of algorithms by simulations.</p>
                           <a href="simulation.php" class="btn btn-primary">View Section</a>
                       </div>
                   </div>
@@ -133,6 +133,8 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
          ?>
         </div>
     </div>
+
+
 
 
     <!-- Optional JavaScript -->
