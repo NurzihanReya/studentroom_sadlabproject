@@ -1,2 +1,6 @@
 # studentroom
- Student Room is an online forum, where students can help each other and build social networking. This is a university project of System Analysis & Design course.
+We are developing an online platform, "Student Room" to help UIU students with academic activities. We will design the entire system with the benefit of the students in mind. The system will contain various features related to the academic studies of the students. We would like to get your feedback.
+For example, the system will contain course and trimester-wise question banks, note-sharing, and book-sharing options. Along with these, a helping section will be added where students can seek help with study-related queries from other students. The system will also contain simulations (for example sorting simulations, B+ tree simulations, etc),  and blog posts about important study topics. 
+Students will be able to learn about the latest research done by UIU students and faculty, and a few guidelines about how to start the process of researching and publishing, as the process is unknown to the majority of the students. 
+Along with the aforementioned features, the basic functionalities of a website will be available, i.e. signup and login, registration process, notification and admin, and regular user access layers. 
+This is a university project of System Analysis & Design course.
