@@ -44,11 +44,17 @@ exit;
             
             echo'<h3>Post Requests</h3>';
         }
-        else
+        else if($_SESSION['user_type_id'] == 2)
         {
-            echo '<li class="list-group-item">User type: Normal </li>
+            echo '<li class="list-group-item">User type: Regular </li>
             </ul>';
         }
+        else if($_SESSION['user_type_id'] == 3)
+        {
+            echo '<li class="list-group-item">User type: Evaluator </li>
+            </ul>';
+        }
+
         
     ?>
 
