@@ -32,7 +32,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
 
 
     <!-- Slider starts here 
-    <h4 class="alert-heading">Welcome admin - <?php echo $_SESSION['username']?></h4> -->
+    <h4 class="alert-heading">Welcome admin - <?php echo $_SESSION['username']?></h4> 
 
 
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -61,7 +61,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
             <span class="sr-only">Next</span>
         </a>
     </div>
-
+-->
 
 
     <!-- Category container start-->
@@ -74,7 +74,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
          
           echo ' <div class="col-md-4 my-2">
                   <div class="card" style="width: 18rem;">
-                  <img src="img/card.jpg" class="d-block w-100" alt="...">
+                 
                       <div class="card-body">
                           <h5 class="card-title"><a href="mocktest.php">Mock Test</a></h5>
                           <p>Perform a mock test and review your answers.</p>
@@ -85,7 +85,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
 
                 <div class="col-md-4 my-2">
                   <div class="card" style="width: 18rem;">
-                  <img src="img/card.jpg" class="d-block w-100" alt="...">
+                 
                       <div class="card-body">
                           <h5 class="card-title"><a href="questionbank.php">Question Bank</a></h5>
                           <p>Solve previous questions and take a better preparation.</p>
@@ -96,7 +96,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
 
                 <div class="col-md-4 my-2">
                   <div class="card" style="width: 18rem;">
-                  <img src="img/card.jpg" class="d-block w-100" alt="...">
+                  
                       <div class="card-body">
                           <h5 class="card-title"><a href="researchupdate.php">Research Update</a></h5>
                           <p>See the latest researches of UIU and plan yours.</p>
@@ -107,7 +107,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
 
                 <div class="col-md-4 my-2">
                   <div class="card" style="width: 18rem;">
-                  <img src="img/card.jpg" class="d-block w-100" alt="...">
+                  
                       <div class="card-body">
                           <h5 class="card-title"><a href="forum.php">Discussion Forum</a></h5>
                           <p>Discuss your study related concerns here.</p>
@@ -118,7 +118,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
 
                 <div class="col-md-4 my-2">
                   <div class="card" style="width: 18rem;">
-                  <img src="img/card.jpg" class="d-block w-100" alt="...">
+                     
                       <div class="card-body">
                           <h5 class="card-title"><a href="simulation.php">Simulations</a></h5>
                           <p>Have a better understanding of algorithms by simulations.</p>
@@ -136,8 +136,18 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
 
 
 
-
     <!-- Optional JavaScript -->
+
+    <!-- Optional JavaScript
+ <img src="img/3659166.jpg" class="d-block w-100" alt="...">
+ <img src="img/card.jpg" class="d-block w-100" alt="...">
+<img src="img/6567453a.jpg" class="d-block w-100" alt="...">
+<img src="img/5437683.jpg" class="d-block w-100" alt="...">
+ <img src="img/6134172.jpg" class="d-block w-100" alt="...">
+
+
+
+-->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
