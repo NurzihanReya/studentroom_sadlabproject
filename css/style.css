@@ -1,0 +1,22 @@
+.section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    width: 60%;
+
+}
+
+.section img {
+    height: 450px;
+    width: 500px;
+    margin: 15% 10% 40% 80%;
+
+}
+
+.section h1 {
+    margin: 50% 10% 40% 130%;
+}
+
+.section p {
+    margin: 50% 10% 40% 130%;
+}

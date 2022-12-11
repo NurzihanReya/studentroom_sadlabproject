@@ -129,7 +129,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
                   <div class="card" style="width: 18rem;">
                   
                       <div class="card-body">
-                          <h5 class="card-title"><a href="researchupdate.php">Research Update</a></h5>
+                      <h5 class="card-title"><a href="researchupdate.php">Research Update</a></h5>
                           <p>See the latest researches of UIU and plan yours.</p>
                           <a href="researchupdate.php" class="btn btn-primary">View Section</a>
                       </div>

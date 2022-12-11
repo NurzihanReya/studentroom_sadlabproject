@@ -33,6 +33,7 @@ exit;
     <div class="container-fluid  mx-1 my-2">
         <?php
     echo'
+    
     <ul class="list-group list-group-flush">
         <li class="list-group-item">Name: ' . $_SESSION['name'] . '</li>
      
@@ -54,7 +55,6 @@ exit;
             echo '<li class="list-group-item">User type: Evaluator </li>
             </ul>';
         }
-
         
     ?>
 

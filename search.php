@@ -59,7 +59,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
                 echo'<div class="jumbotron jumbotron-fluid">
                 <div class="container">
                     <p class="display-4">No Results Found</p>
-                    <p class="lead">Make sure all the words are spelled correctly or try different keywords.</p>
+                    
                 </div>
              </div>';
             }

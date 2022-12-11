@@ -1,5 +1,17 @@
+<?php
+session_start(); //Every page that will use the session information on the website must be identified by the session_start() function. This initiates a session on each PHP page. The session_start function must be the first thing sent to the browser or it won't work properly. 
+
+if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
+    header("location: login.php");
+    exit;
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +19,9 @@
     <title>Researcher Profiles-1</title>
     <link rel="stylesheet" href="css/r_profiles.css">
 </head>
+
 <body>
-    
+
     <div class="container">
         <h1 class="heading">Researcher Profiles</h1>
 
@@ -17,7 +30,7 @@
                 <img src="css/demo.jpg" alt="">
                 <h3>RAHMAN, CHOWDHURY MOFIZUR,<i>&nbspPh.D.</i></h3>
                 <p>Professor & Advisor to Board of Trustees</p>
-                <p>Email :<a href="mailto: cmr@uiu.ac.bd">cmr@uiu.ac.bd</a></p> 
+                <p>Email :<a href="mailto: cmr@uiu.ac.bd">cmr@uiu.ac.bd</a></p>
                 <a href="r_details.html" class="btn">Details</a>
             </div>
 
@@ -25,7 +38,7 @@
                 <img src="css/demo.jpg" alt="">
                 <h3>MIA, MD. ABUL KASHEM,<i>&nbspPh.D.</i></h3>
                 <p>Vice Chancellor (In-Charge)</p>
-                <p>Email :<a href="mailto: kashem@uiu.ac.bd">kashem@uiu.ac.bd</a></p> 
+                <p>Email :<a href="mailto: kashem@uiu.ac.bd">kashem@uiu.ac.bd</a></p>
                 <a href="r_details.html" class="btn">Details</a>
             </div>
 
@@ -33,7 +46,7 @@
                 <img src="css/demo.jpg" alt="">
                 <h3>FARID, DEWAN MD.,<i>&nbspPh.D.</i></h3>
                 <p>Professor</p>
-                <p>Email :<a href="mailto: dewanfarid@cse.uiu.ac.bd">dewanfarid@cse.uiu.ac.bd</a></p> 
+                <p>Email :<a href="mailto: dewanfarid@cse.uiu.ac.bd">dewanfarid@cse.uiu.ac.bd</a></p>
                 <a href="r_details.html" class="btn">Details</a>
             </div>
 
@@ -41,7 +54,7 @@
                 <img src="css/demo.jpg" alt="">
                 <h3>HUDA, MOHAMMAD NURUL,<i>&nbspPh.D.</i></h3>
                 <p>Professor & Director - MSCSE</p>
-                <p>Email :<a href="mailto: mnh@cse.uiu.ac.bd">mnh@cse.uiu.ac.bd</a></p> 
+                <p>Email :<a href="mailto: mnh@cse.uiu.ac.bd">mnh@cse.uiu.ac.bd</a></p>
                 <a href="r_details.html" class="btn">Details</a>
             </div>
 
@@ -49,7 +62,7 @@
                 <img src="css/demo.jpg" alt="">
                 <h3>ISLAM, A.K.M. MUZAHIDUL,<i>&nbspPh.D.</i></h3>
                 <p>Professor & Director - CIAC</p>
-                <p>Email :<a href="mailto: muzahid@cse.uiu.ac.bd">muzahid@cse.uiu.ac.bd</a></p> 
+                <p>Email :<a href="mailto: muzahid@cse.uiu.ac.bd">muzahid@cse.uiu.ac.bd</a></p>
                 <a href="r_details.html" class="btn">Details</a>
             </div>
 
@@ -57,7 +70,7 @@
                 <img src="css/demo.jpg" alt="">
                 <h3>ISLAM, MD. MOTAHARUL,<i>&nbspPh.D.</i></h3>
                 <p>Professor</p>
-                <p>Email :<a href="mailto: motaharul@cse.uiu.ac.bd">motaharul@cse.uiu.ac.bd</a></p> 
+                <p>Email :<a href="mailto: motaharul@cse.uiu.ac.bd">motaharul@cse.uiu.ac.bd</a></p>
                 <a href="r_details.html" class="btn">Details</a>
             </div>
 
@@ -65,7 +78,7 @@
                 <img src="css/demo.jpg" alt="">
                 <h3>ISLAM, SALEKUL,<i>&nbspPh.D.</i></h3>
                 <p>Professor & Head of the Dept.</p>
-                <p>Email :<a href="mailto: salekul@cse.uiu.ac.bd">salekul@cse.uiu.ac.bd</a></p> 
+                <p>Email :<a href="mailto: salekul@cse.uiu.ac.bd">salekul@cse.uiu.ac.bd</a></p>
                 <a href="r_details.html" class="btn">Details</a>
             </div>
 
@@ -73,7 +86,7 @@
                 <img src="css/demo.jpg" alt="">
                 <h3>MAMUN, KHONDAKER ABDULLAH AL,<i>&nbspPh.D.</i></h3>
                 <p>Professor & Director - AIMS Lab</p>
-                <p>Email :<a href="mailto: mamun@cse.uiu.ac.bd">mamun@cse.uiu.ac.bd</a></p> 
+                <p>Email :<a href="mailto: mamun@cse.uiu.ac.bd">mamun@cse.uiu.ac.bd</a></p>
                 <a href="r_details.html" class="btn">Details</a>
             </div>
 
@@ -81,7 +94,7 @@
                 <img src="css/demo.jpg" alt="">
                 <h3>PATHAN, AL-SAKIB KHAN,<i>&nbspPh.D.</i></h3>
                 <p>Professor</p>
-                <p>Email :<a href="mailto: sakib@cse.uiu.ac.bd">sakib@cse.uiu.ac.bd</a></p> 
+                <p>Email :<a href="mailto: sakib@cse.uiu.ac.bd">sakib@cse.uiu.ac.bd</a></p>
                 <a href="r_details.html" class="btn">Details</a>
             </div>
 
@@ -89,7 +102,7 @@
                 <img src="css/demo.jpg" alt="">
                 <h3>RAHMAN, MOHAMMAD SHAHRIAR,<i>&nbspPh.D.</i></h3>
                 <p>Professor & Director - CITS</p>
-                <p>Email :<a href="mailto: mshahriar@cse.uiu.ac.bd">mshahriar@cse.uiu.ac.bd</a></p> 
+                <p>Email :<a href="mailto: mshahriar@cse.uiu.ac.bd">mshahriar@cse.uiu.ac.bd</a></p>
                 <a href="r_details.html" class="btn">Details</a>
             </div>
 
@@ -97,7 +110,7 @@
                 <img src="css/demo.jpg" alt="">
                 <h3>SARWAR, HASAN,<i>&nbspPh.D.</i></h3>
                 <p>Professor</p>
-                <p>Email :<a href="mailto: hsarwar@cse.uiu.ac.bd">hsarwar@cse.uiu.ac.bd</a></p> 
+                <p>Email :<a href="mailto: hsarwar@cse.uiu.ac.bd">hsarwar@cse.uiu.ac.bd</a></p>
                 <a href="r_details.html" class="btn">Details</a>
             </div>
 
@@ -105,7 +118,7 @@
                 <img src="css/demo.jpg" alt="">
                 <h3>SHATABDA, SWAKKHAR,<i>&nbspPh.D.</i></h3>
                 <p>Professor & Director - IQAC</p>
-                <p>Email :<a href="mailto: swakkhar@cse.uiu.ac.bd">swakkhar@cse.uiu.ac.bd</a></p> 
+                <p>Email :<a href="mailto: swakkhar@cse.uiu.ac.bd">swakkhar@cse.uiu.ac.bd</a></p>
                 <a href="r_details.html" class="btn">Details</a>
             </div>
 
@@ -118,9 +131,10 @@
             <a href="r_profiles3.html" class="next">3</a>
             <a href="r_profiles4.html" class="next">4</a>
             <a href="r_profiles5.html" class="next">5</a>
-        </div>  
+        </div>
     </div>
 
-    
+
 </body>
+
 </html>
