@@ -119,7 +119,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
         <h1 class="py-2">Browse Questions</h1>
         <?php
     $id = $_GET['catid'];
-    $sql = "SELECT * FROM `threads` WHERE thread_cat_id=$id and status = 1"; 
+    $sql = "SELECT * FROM `threads` WHERE thread_cat_id=$id and status = 1 "; 
     $result = mysqli_query($conn, $sql);
     $noResult = true;
     while($row = mysqli_fetch_assoc($result)){
