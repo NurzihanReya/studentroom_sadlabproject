@@ -1,10 +1,12 @@
 <?php
 $showAlert = false;
 $showError = false;
-if($_SERVER["REQUEST_METHOD"] == "POST"){
+//if($_SERVER["REQUEST_METHOD"] == "POST"){
   //$_SERVER['REQUEST_METHOD'] fetches the request method used to access the page. 
     //Request methods are 'GET', 'HEAD', 'POST', 'PUT'
     include 'partials/_dbconnect.php';
+
+    if(isset($_POST["Submit"])){
     $name = $_POST["name"];
     $username = $_POST["username"];  //PHP $_POST is a PHP super global variable which is used to collect form data after submitting an HTML form with method="post".
     $password = $_POST["password"];

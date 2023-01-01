@@ -31,7 +31,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
 
 <body>
     <?php include 'partials/_dbconnect.php';?>
-    <?php include 'partials/_nav.php';?>
+    <?php include 'partials/_navsearch.php';?>
     <?php
     $id = $_GET['catid'];
     $sql = "SELECT * FROM `categories` WHERE category_id=$id"; 
@@ -97,7 +97,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
 
                 
                 <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Ellaborate Your Concern</label>
+                    <label for="exampleFormControlTextarea1">Elaborate Your Concern</label>
                     <textarea class="form-control" id="desc" name="desc" rows="3"></textarea>
                 </div>
                 <button type="submit" class="btn btn-success">Submit</button>

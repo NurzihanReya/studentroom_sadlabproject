@@ -45,7 +45,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
                 $thread_user_id = $row['thread_user_id'];
                 $status = $row['status'];
                 $number = $number+1;
-                
+            }
                 if($number>0)
                 {
                 echo'
@@ -56,14 +56,14 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
                     </button>
                 </div>';
                 }
-            }
+            
         }
 
     ?>
 
 
     <!-- Slider starts here 
-    <h4 class="alert-heading">Welcome admin - <?php echo $_SESSION['username']?></h4> 
+    <h4 class="alert-heading">Welcome admin - <?php echo $_SESSION['username']?></h4>  -->
 
 
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -92,7 +92,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
             <span class="sr-only">Next</span>
         </a>
     </div>
--->
+
 
 
     <!-- Category container start-->
@@ -103,60 +103,69 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
             <?php 
          
          
-          echo ' <div class="col-md-4 my-2">
-                  <div class="card" style="width: 18rem;">
-                 
-                      <div class="card-body">
-                          <h5 class="card-title"><a href="mocktest.php">Mock Test</a></h5>
-                          <p>Perform a mock test and review your answers.</p>
-                          <a href="mocktest.php" class="btn btn-primary">View Section</a>
-                      </div>
-                  </div>
-                </div>
+          echo '
+          <div class="col-md-4 my-2">
+          <div class="card" style="width: 18rem;">
+          
+              <div class="card-body">
+              <img src="img/6134172.jpg" class="d-block w-100" alt="...">
+                  <h5 class="card-title"><a href="forum.php">Discussion Forum</a></h5>
+                  <p>Discuss your study related concerns here.</p>
+                  <a href="forum.php" class="btn btn-primary">View Section</a>
+              </div>
+          </div>
+        </div>
+         
+          
+          <div class="col-md-4 my-2">
+          <div class="card" style="width: 18rem;">
+         
+              <div class="card-body">
+              <img src="img/3659166.jpg" class="d-block w-100" alt="...">
+                  <h5 class="card-title"><a href="http://localhost/studentroom/exam/exam_category.php">Mock Test</a></h5>
+                  <p>Perform a mock test and review your answers.</p>
+                  <a href="http://localhost/studentroom/exam/exam_category.php" class="btn btn-primary">View Section</a>
+              </div>
+          </div>
+        </div>
 
-                <div class="col-md-4 my-2">
-                  <div class="card" style="width: 18rem;">
-                 
-                      <div class="card-body">
-                          <h5 class="card-title"><a href="questionbank.php">Question Bank</a></h5>
-                          <p>Solve previous questions and take a better preparation.</p>
-                          <a href="questionbank.php" class="btn btn-primary">View Section</a>
-                      </div>
-                  </div>
-                </div>
+        <div class="col-md-4 my-2">
+          <div class="card" style="width: 18rem;">
+         
+              <div class="card-body">
+                <img src="img/card.jpg" class="d-block w-100" alt="...">
+                  <h5 class="card-title"><a href="qb/questionbank.php">Question Bank</a></h5>
+                  <p>Solve previous questions and take a better preparation.</p>
+                  <a href="qb/questionbank.php" class="btn btn-primary">View Section</a>
+              </div>
+          </div>
+        </div>
 
-                <div class="col-md-4 my-2">
-                  <div class="card" style="width: 18rem;">
-                  
-                      <div class="card-body">
-                      <h5 class="card-title"><a href="researchupdate.php">Research Update</a></h5>
-                          <p>See the latest researches of UIU and plan yours.</p>
-                          <a href="researchupdate.php" class="btn btn-primary">View Section</a>
-                      </div>
-                  </div>
-                </div>
+        <div class="col-md-4 my-2">
+          <div class="card" style="width: 18rem;">
+          
+              <div class="card-body">
+              <img src="img/6567453a.jpg" class="d-block w-100" alt="...">
+                  <h5 class="card-title"><a href="r_profiles1.php">Research Update</a></h5>
+                  <p>See the latest researches of UIU and plan yours.</p>
+                  <a href="r_profiles1.php" class="btn btn-primary">View Section</a>
+              </div>
+          </div>
+        </div>
 
-                <div class="col-md-4 my-2">
-                  <div class="card" style="width: 18rem;">
-                  
-                      <div class="card-body">
-                          <h5 class="card-title"><a href="forum.php">Discussion Forum</a></h5>
-                          <p>Discuss your study related concerns here.</p>
-                          <a href="forum.php" class="btn btn-primary">View Section</a>
-                      </div>
-                  </div>
-                </div>
+        
 
-                <div class="col-md-4 my-2">
-                  <div class="card" style="width: 18rem;">
-                     
-                      <div class="card-body">
-                          <h5 class="card-title"><a href="simulation.php">Simulations</a></h5>
-                          <p>Have a better understanding of algorithms by simulations.</p>
-                          <a href="simulation.php" class="btn btn-primary">View Section</a>
-                      </div>
-                  </div>
-                </div>'
+        <div class="col-md-4 my-2">
+          <div class="card" style="width: 18rem;">
+             
+              <div class="card-body">
+              <img src="img/5437683.jpg" class="d-block w-100" alt="...">
+                  <h5 class="card-title"><a href="hp_simulation.php">Simulations</a></h5>
+                  <p>Have a better understanding of algorithms by simulations.</p>
+                  <a href="hp_simulation.php" class="btn btn-primary">View Section</a>
+              </div>
+          </div>
+        </div>'
 
                 
                 ;
