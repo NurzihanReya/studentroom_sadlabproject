@@ -132,7 +132,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
         $status = $row['status'];
         
         
-        $sql2 = "SELECT name FROM `users` WHERE sno='$thread_user_id'";
+        $sql2 = "SELECT * FROM `users` WHERE sno='$thread_user_id'";
         $result2 = mysqli_query($conn, $sql2);
         $row2 = mysqli_fetch_assoc($result2);
         
@@ -140,7 +140,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
 
 
         echo '<div class="media my-3">
-            <img src="img/ques3.png" width="54px" class="mr-3" alt="...">
+        <img style="border-radius: 50%; height: 54px; width:54px; padding: 5px;" src="data:images/jpeg;base64,'.base64_encode($row2['images']).'"/>
             <div class="media-body">'.
              '<h5 class="mt-0"> <a class="text-dark" href="threads.php?threadid=' . $id. '">'. $title . ' </a></h5>
                 '. $desc . ' </div>'.'<div class="font-weight-bold my-0"> Asked by: '. $row2['name'] . ' at '. $thread_time. '</div>'.

@@ -5,6 +5,7 @@ $showError = false;
   //$_SERVER['REQUEST_METHOD'] fetches the request method used to access the page. 
     //Request methods are 'GET', 'HEAD', 'POST', 'PUT'
     include 'partials/_dbconnect.php';
+    $method = $_SERVER['REQUEST_METHOD'];
 
     if(isset($_POST["Submit"])){
     $name = $_POST["name"];
@@ -12,6 +13,7 @@ $showError = false;
     $password = $_POST["password"];
     $cpassword = $_POST["cpassword"];
     $bloodgroup = $_POST["bloodgroup"];
+    $images= addslashes(file_get_contents($_FILES["images"]["tmp_name"]));
 
     //check for duplicate user
     $existSql = "SELECT * FROM `users` WHERE username = '$username'";
@@ -26,7 +28,7 @@ $showError = false;
     {
         //$exists = false;
         if($password == $cpassword){
-            $sql = "INSERT INTO `users` (`name`, `username`, `password`, `dt`, `blood_group`) VALUES ('$name', '$username', '$password', current_timestamp(), '$bloodgroup')";
+            $sql = "INSERT INTO `users` (`name`, `username`, `password`, `dt`, `blood_group`,`images`) VALUES ('$name', '$username', '$password', current_timestamp(), '$bloodgroup','$images')";
             $result = mysqli_query($conn, $sql);
             if ($result)
             {
@@ -87,7 +89,7 @@ $showError = false;
 
     <div class="container my-4">
         <h1 class="text-center">Signup to Student Room</h1>
-        <form action="/studentroom/signup.php" method="post">
+        <form action="/studentroom/signup.php" method="post" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" class="form-control" id="name" name="name">
@@ -109,10 +111,14 @@ $showError = false;
                 <input type="password" class="form-control" id="cpassword" name="cpassword">
                 <small id="emailHelp" class="form-text text-muted">Make sure to type the same password</small>
             </div>
+            <div class="form-group">
+                <label for="images">Upload Profile Picture</label>
+                <input type="file" class="form-control" id="images" name="images">
+            </div>
 
 
+            <button type="submit" name="Submit" value="submit" class="btn btn-primary">SignUp</button>
 
-            <button type="submit" class="btn btn-primary">SignUp</button>
         </form>
     </div>
 
