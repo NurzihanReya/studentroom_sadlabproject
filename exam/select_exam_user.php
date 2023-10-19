@@ -21,6 +21,18 @@ exit;
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <title>Select Exam</title>
+    <script type='text/javascript'>
+    function check(exam_category_id, exam_time_in_min) {
+        if (confirm('Are you sure you want to start this exam?')) {
+            var url = "show_ques1.php?id=" + exam_category_id + "&id1=" + exam_time_in_min;
+            console.log(url);
+            window.location.href = url;
+        } else {
+            console.log('Not started.');
+        }
+        return false;
+    }
+    </script>
 </head>
 
 <body>
@@ -42,28 +54,26 @@ exit;
         <h2 class="text-center my-4">Student Room - Exam Categories</h2>
 
         <?php
-                                                $count = 0;
-                                                $res = mysqli_query($conn, "select * from exam_category");
-                                                while($row=mysqli_fetch_array($res))
-                                                {
-                                                    ?>
+            $count = 0;
+            $res = mysqli_query($conn, "select * from exam_category");
+            while($row=mysqli_fetch_array($res))
+            {
+        ?>
 
         <div class="card text-center my-4 " style="width: 1200px;">
             <div class=" card-header">
-                <?php echo $row["courseid"]; ?>
+                <?php echo $row["subject_name"]; ?>
             </div>
             <div class="card-body">
                 <h5 class="card-title"><?php echo $row["exam_category_name"]; ?></h5>
                 <p class="card-text"> Exam Time: <?php echo $row["exam_time_in_min"]; ?> Minutes
                 </p>
-                <a class="btn btn-primary"
-                    href="show_ques1.php?id= <?php echo $row["exam_category_id"]; ?>&id1=<?php echo $row["exam_time_in_min"]; ?>">
-                    Start Exam </a>
+                <a class="btn btn-primary text-white"
+                    onclick='return check(<?php echo $row["exam_category_id"]; ?>, <?php echo $row["exam_time_in_min"]; ?>)'>Start
+                    Exam </a>
             </div>
         </div>
-        <?php
-                } ?>
-
+        <?php }  ?>
     </div>
 
 

@@ -45,7 +45,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
 
                 <div>
                     <p>Time:</p>
-                    <input id="timeout" type="number" placeholder="Miliseconds" />
+                    <input style="width:200px;" id="n" type="range" min="1" max="30" value="10s" />
                 </div>
 
                 <div class="errors">
@@ -62,18 +62,22 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
 
         <header>
             <div class="header-container">
-                <div id="settings-btn">
-                    <i class="fas fa-bars"></i>
-                </div>
-
-                <div>
-                    <h1><u>Merge Sort Simulation</u></h1>
-                </div>
+                <center>
+                    <div id="settings-btn">
+                        <h6>Settings</h6>
+                        <i class="fas fa-bars"></i>
+                </center>
             </div>
-            <div class="gradient-border"></div>
-        </header>
 
-        </p>
+            <div>
+                <h1><u>Merge Sort Simulation</u></h1>
+            </div>
+    </div>
+    <div class="gradient-border"></div>
+    </header>
+
+    </p>
+    <div class="container">
         <div class="collapse show" id="collapseExample" style="">
             <div class="card card-body">
                 <p>
@@ -117,6 +121,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
         <script src="js/main.js"></script>
         <script src="js/settings.js"></script>
         <script src="js/animation.js"></script>
+    </div>
     </div>
 
 </body>

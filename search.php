@@ -49,7 +49,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
             
             echo '<div class="result">
             <img src="img/ques3.png" width="30px" class="mr-3" alt="...">
-                        <h4><i><a href="'. $url. '" class="text-dark">'. $title. '</a> </i></h4>
+                        <h4><i><a href="'.$url. '" class="text-dark">'. $title. '</a> </i></h4>
                         <p>'. $desc .'</p>
                   </div>'; 
             }

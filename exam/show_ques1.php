@@ -91,7 +91,7 @@ $exam_time = $exam_time * 60;
                                         
                                         ?>
                                     <input type="radio" value="1"
-                                        name="ques_no[<?php echo $question_no; ?>]">&nbsp;<?php echo ' <img src=" '.  $opt1 . ' " height="150" width="150"> ';?>
+                                        name="ques_no[<?php echo $question_no; ?>]">&nbsp;<?php echo ' <img src=" '.  $opt1 . ' " height="300" width="450"> ';?>
                                     <?php
                                     }
                                     else
@@ -116,7 +116,7 @@ $exam_time = $exam_time * 60;
                 { 
                 ?>
                                     <input type="radio" value="2"
-                                        name="ques_no[<?php echo $question_no; ?>]">&nbsp;<?php echo ' <img src=" '.  $opt2 . ' " height="150" width="150"> ';?>
+                                        name="ques_no[<?php echo $question_no; ?>]">&nbsp;<?php echo ' <img src=" '.  $opt2 . ' " height="300" width="450"> ';?>
                                     <?php
                 }
                 else
@@ -141,7 +141,7 @@ $exam_time = $exam_time * 60;
                     
                     ?>
                                     <input type="radio" value="3"
-                                        name="ques_no[<?php echo $question_no; ?>]">&nbsp;<?php echo ' <img src=" '.  $opt3 . ' " height="150" width="150"> ';?>
+                                        name="ques_no[<?php echo $question_no; ?>]">&nbsp;<?php echo ' <img src=" '.  $opt3 . ' " height="300" width="450"> ';?>
                                     <?php
                 }
                 else
@@ -166,7 +166,7 @@ $exam_time = $exam_time * 60;
                     
                     ?>
                                     <input type="radio" value="4"
-                                        name="ques_no[<?php echo $question_no; ?>]">&nbsp;<?php echo ' <img src=" '.  $opt4 . ' " height="150" width="150"> ';?>
+                                        name="ques_no[<?php echo $question_no; ?>]">&nbsp;<?php echo ' <img src=" '.  $opt4 . ' " height="300" width="450"> ';?>
                                     <?php
                 }
                 else
@@ -191,7 +191,7 @@ $exam_time = $exam_time * 60;
                     <?php $i++;}?>
 
 
-                    <center><input type="submit" value="submit Quiz" class="btn btn-success" /></center>
+                    <center><input type="submit" value="Submit Quiz" class="btn btn-success" /></center>
                 </form>
             </div>
             <div class="col-sm-2"></div>

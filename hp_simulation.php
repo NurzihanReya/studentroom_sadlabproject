@@ -50,7 +50,16 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
                     </div>
                 </div>
 
-
+                <div class="col-sm-5 my-4 mx-3">
+                    <img src="images/nqueen.png" height="300px" width="100px" class="card-img-top" alt="nqp">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">N Queens Problem</h5>
+                            <p class="card-text">Click here to learn about N Queens Problem.</p>
+                            <a href="nqueens/simulation.php" class="btn btn-primary">Details</a>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="col-sm-5 my-4 mx-3">
                     <img src="images/tree.png" height="300px" width="100px" class="card-img-top" alt="bpt">
@@ -85,16 +94,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
                     </div>
                 </div>
 
-                <div class="col-sm-5 my-4 mx-3">
-                    <img src="images/nqueen.png" height="300px" width="100px" class="card-img-top" alt="nqp">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">N Queens Problem</h5>
-                            <p class="card-text">Click here to learn about N Queens Problem.</p>
-                            <a href="nqueens/simulation.php" class="btn btn-primary">Details</a>
-                        </div>
-                    </div>
-                </div>
+
 
             </div>
         </div>

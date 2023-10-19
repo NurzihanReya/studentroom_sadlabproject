@@ -38,28 +38,33 @@ while($row = mysqli_fetch_array($res))
                                             <div class="form-group"><label for="newquestions"
                                                     class=" form-control-label">
                                                     Add Question</label><input type="text" id="newquestions"
-                                                    placeholder="Add Question" class="form-control" name="questions">
+                                                    placeholder="Add Question" class="form-control" name="questions"
+                                                    required>
                                             </div>
                                             <div class="form-group"><label for="opt1" class=" form-control-label">
                                                     Add Option 1</label><input type="text" id="opt1"
-                                                    placeholder="Add Option 1" class="form-control" name="opt1">
+                                                    placeholder="Add Option 1" class="form-control" name="opt1"
+                                                    required>
                                             </div>
                                             <div class="form-group"><label for="opt2" class=" form-control-label">
                                                     Add Option 2</label><input type="text" id="opt2"
-                                                    placeholder="Add Option 2" class="form-control" name="opt2">
+                                                    placeholder="Add Option 2" class="form-control" name="opt2"
+                                                    required>
                                             </div>
                                             <div class="form-group"><label for="opt3" class=" form-control-label">
                                                     Add Option 3</label><input type="text" id="opt3"
-                                                    placeholder="Add Option 3" class="form-control" name="opt3">
+                                                    placeholder="Add Option 3" class="form-control" name="opt3"
+                                                    required>
                                             </div>
                                             <div class="form-group"><label for="opt4" class=" form-control-label">
                                                     Add Option 4</label><input type="text" id="opt4"
-                                                    placeholder="Add Option 4" class="form-control" name="opt4">
+                                                    placeholder="Add Option 4" class="form-control" name="opt4"
+                                                    required>
                                             </div>
                                             <div class="form-group"><label for="answer" class=" form-control-label">
                                                     Add Correct Option Number</label><input type="text" id="answer"
                                                     placeholder="Add Correct Option Number" class="form-control"
-                                                    name="answer">
+                                                    name="answer" required>
                                             </div>
                                             <div class="form-group"><input type="submit" name="submit1" value="Submit"
                                                     class="btn btn-success" style="float:right;">
@@ -68,7 +73,9 @@ while($row = mysqli_fetch_array($res))
                                     </div>
 
                                 </div>
-                                <!-- image portion -->
+                            </form>
+                            <!-- image portion -->
+                            <form name="form1" action="" method="post" enctype="multipart/form-data">
                                 <div class="col-lg-6" style="float:right;">
 
                                     <div class="card">
@@ -77,28 +84,33 @@ while($row = mysqli_fetch_array($res))
                                             <div class="form-group"><label for="newquestions"
                                                     class=" form-control-label">
                                                     Add Question</label><input type="text" id="newquestions"
-                                                    placeholder="Add Question" class="form-control" name="fquestions">
+                                                    placeholder="Add Question" class="form-control" name="fquestions"
+                                                    required>
                                             </div>
                                             <div class="form-group"><label for="fopt1" class=" form-control-label">
                                                     Add Option 1</label><input type="file" id="fopt1"
-                                                    class="form-control" style="padding-bottom: 36px" name="fopt1">
+                                                    class="form-control" style="padding-bottom: 36px" name="fopt1"
+                                                    required>
                                             </div>
                                             <div class="form-group"><label for="fopt2" class=" form-control-label">
                                                     Add Option 2</label><input type="file" id="fopt2"
-                                                    class="form-control" style="padding-bottom: 36px" name="fopt2">
+                                                    class="form-control" style="padding-bottom: 36px" name="fopt2"
+                                                    required>
                                             </div>
                                             <div class="form-group"><label for="fopt3" class=" form-control-label">
                                                     Add Option 3</label><input type="file" id="fopt3"
-                                                    class="form-control" style="padding-bottom: 36px" name="fopt3">
+                                                    class="form-control" style="padding-bottom: 36px" name="fopt3"
+                                                    required>
                                             </div>
                                             <div class="form-group"><label for="fopt4" class=" form-control-label">
                                                     Add Option 4</label><input type="file" id="fopt4"
-                                                    class="form-control" style="padding-bottom: 36px" name="fopt4">
+                                                    class="form-control" style="padding-bottom: 36px" name="fopt4"
+                                                    required>
                                             </div>
                                             <div class="form-group"><label for="fanswer" class=" form-control-label">
                                                     Add Correct Option Number</label> <input type="text" id="fanswer"
                                                     class="form-control" placeholder="Add Correct Option Number"
-                                                    name="fanswer">
+                                                    name="fanswer" required>
                                             </div>
                                             <div class="form-group"><input type="submit" name="submit2" value="Submit"
                                                     class="btn btn-success" style="float:right;">
@@ -148,7 +160,7 @@ while($row = mysqli_fetch_array($res))
                             if(strpos($row['opt1'], 'opt_images/') !== FALSE) //chobi ase
                             {
                                 ?>
-                                <img src="<?php echo $row['opt1']; ?>" height="50" width="80">
+                                <img src="<?php echo $row['opt1']; ?>" height="150" width="200">
                                 <?php
                             }
                             else
@@ -160,7 +172,7 @@ while($row = mysqli_fetch_array($res))
                             if(strpos($row['opt2'], 'opt_images/') !== FALSE) //chobi ase
                             {
                                 ?>
-                                <img src="<?php echo $row['opt2']; ?>" height="50" width="80">
+                                <img src="<?php echo $row['opt2']; ?>" height="150" width="200">
                                 <?php
                             }
                             else
@@ -172,7 +184,7 @@ while($row = mysqli_fetch_array($res))
                             if(strpos($row['opt3'], 'opt_images/') !== FALSE) //chobi ase
                             {
                                 ?>
-                                <img src="<?php echo $row['opt3']; ?>" height="50" width="80">
+                                <img src="<?php echo $row['opt3']; ?>" height="150" width="200">
                                 <?php
                             }
                             else
@@ -184,7 +196,7 @@ while($row = mysqli_fetch_array($res))
                             if(strpos($row['opt4'], 'opt_images/') !== FALSE) //chobi ase
                             {
                                 ?>
-                                <img src="<?php echo $row['opt4']; ?>" height="50" width="80">
+                                <img src="<?php echo $row['opt4']; ?>" height="150" width="200">
                                 <?php
                             }
                             else
@@ -197,7 +209,7 @@ while($row = mysqli_fetch_array($res))
                             if(strpos($row['answer'], 'opt_images/') !== FALSE) //chobi ase
                             {
                                 ?>
-                                <img src="<?php echo $row['answer']; ?>" height="50" width="80">
+                                <img src="<?php echo $row['answer']; ?>" height="150" width="200">
                                 <?php
                             }
                             else
@@ -328,12 +340,15 @@ if(isset($_POST["submit2"]))
 
 
     mysqli_query($conn, "insert into exam_questions values (NULL, '$_POST[fquestions]', '$dst_db1', '$dst_db2', '$dst_db3', '$dst_db4', '$_POST[fanswer]', '$exam_category')") or die(mysqli_error($conn));
-echo ("<script LANGUAGE='JavaScript'>
+
+    ?>
+<script LANGUAGE='JavaScript'>
 window.alert('Question added successfully!');
-header('Location: http://localhost/studentroom/exam/add_edit_after_select_exam.php?id='.$exam_category_id);
-</script>");
-}
-?>
+window.location.href = "add_edit_after_select_exam.php?id=<?php echo $exam_category_id?>";
+</script>
+<?php
+    }
+    ?>
 
 
 

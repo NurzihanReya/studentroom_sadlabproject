@@ -49,6 +49,8 @@ if($loggedin){
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="/studentroom/exam/exam_category.php">Exam Categories</a>
           <a class="dropdown-item" href="/studentroom/exam/add_edit_exam_ques.php">Questions</a>
+          <a class="dropdown-item" href="/studentroom/exam/select_exam_user.php">Perform Quiz</a>
+
         </div>
       </li>';
     }

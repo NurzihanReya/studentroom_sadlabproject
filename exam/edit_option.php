@@ -47,31 +47,31 @@ exit;
                                 <div class="form-group"><label for="newquestions" class=" form-control-label">
                                         Update Question</label><input type="text" id="newquestions"
                                         placeholder="Update Question" class="form-control" name="questions"
-                                        value=" <?php echo $ques ; ?>">
+                                        value=" <?php echo $ques ; ?>" required>
                                 </div>
                                 <div class="form-group"><label for="opt1" class=" form-control-label">
                                         Update Option 1</label><input type="text" id="opt1"
                                         placeholder="Update Option 1" class="form-control" name="opt1"
-                                        value=" <?php echo $opt1 ; ?>">
+                                        value=" <?php echo $opt1 ; ?>" required>
                                 </div>
                                 <div class="form-group"><label for="opt2" class=" form-control-label">
                                         Update Option 2</label><input type="text" id="opt2"
                                         placeholder="Update Option 2" class="form-control" name="opt2"
-                                        value=" <?php echo $opt2 ; ?>">
+                                        value=" <?php echo $opt2 ; ?>" required>
                                 </div>
                                 <div class="form-group"><label for="opt3" class=" form-control-label">
                                         Update Option 3</label><input type="text" id="opt3"
                                         placeholder="Update Option 3" class="form-control" name="opt3"
-                                        value=" <?php echo $opt3 ; ?>">
+                                        value=" <?php echo $opt3 ; ?>" required>
                                 </div>
                                 <div class="form-group"><label for="opt4" class=" form-control-label">
                                         Update Option 4</label><input type="text" id="opt4"
                                         placeholder="Update Option 4" class="form-control" name="opt4"
-                                        value=" <?php echo $opt4 ; ?>">
+                                        value=" <?php echo $opt4 ; ?>" required>
                                 </div>
                                 <div class="form-group"><label for="answer" class=" form-control-label">
                                         Update Answer</label><input type="text" id="answer" placeholder="Update Answer"
-                                        class="form-control" name="answer" value=" <?php echo $ans ; ?>">
+                                        class="form-control" name="answer" value=" <?php echo $ans ; ?>" required>
                                 </div>
                                 <div class="form-group"><input type="submit" name="submit1" value="Update"
                                         class="btn btn-success" style="float:right;">

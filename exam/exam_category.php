@@ -17,9 +17,12 @@ exit;
         <div class="animated fadeIn">
             <h4>Add Exam Categories</h4>
 
+            <div class=" row">
 
-            <div class="row">
-                <div class=" col-lg-6 " style="float:left;">
+                <div class=" col-lg-6 ">
+
+
+
                     <div class=" card">
                         <form name="form1" action="" method="POST">
                             <div class="card-body">
@@ -30,17 +33,19 @@ exit;
                                     <div class="card-body card-block">
                                         <div class="form-group"><label for="examtime" class=" form-control-label">Course
                                                 Name </label><input type="text" id="examtime"
-                                                placeholder="Enter Course Name" class="form-control" name="courseid">
+                                                placeholder="Enter Course Name" class="form-control" name="courseid"
+                                                required>
                                         </div>
                                         <div class="form-group"><label for="newexamcategory"
                                                 class=" form-control-label">Topic
                                                 Name</label><input type="text" id="newexamcategory"
-                                                placeholder="Enter Topic Name" class="form-control" name="examname">
+                                                placeholder="Enter Topic Name" class="form-control" name="examname"
+                                                required>
                                         </div>
                                         <div class="form-group"><label for="examtime" class=" form-control-label">Exam
                                                 Time </label><input type="text" id="examtime"
                                                 placeholder="Enter Total Exam Time In Minutes" class="form-control"
-                                                name="examtime">
+                                                name="examtime" required>
                                         </div>
                                         <div class="form-group"><input type="submit" name="submit1" value="Add Exam"
                                                 class="btn btn-success" style="float:right;">
@@ -54,7 +59,11 @@ exit;
                 </div>
 
 
+
+
+
                 <div class="col-lg-12 my-4" style="float:left;">
+
                     <div class="card">
                         <form name="form1" action="" method="POST">
                             <div class="card-body">

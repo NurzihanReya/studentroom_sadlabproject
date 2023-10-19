@@ -98,10 +98,10 @@ $showError = false;
                 <label for="username">Email</label>
                 <input type="email" class="form-control" id="username" name="username" aria-describedby="emailHelp">
             </div>
-            <div class="form-group">
+            <!-- <div class="form-group">
                 <label for="bloodgroup">Blood group</label>
                 <input type="text" class="form-control" id="bloodgroup" name="bloodgroup">
-            </div>
+            </div> -->
             <div class="form-group">
                 <label for="password">Password</label>
                 <input type="password" class="form-control" id="password" name="password">

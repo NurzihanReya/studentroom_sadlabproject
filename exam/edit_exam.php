@@ -45,17 +45,17 @@ while($row = mysqli_fetch_array($res))
                                             <div class="form-group"><label for="newexamcategory"
                                                     class=" form-control-label">New Course Name </label><input
                                                     type="text" id="newexamcategory" class="form-control"
-                                                    name="coursename" value="<?php echo $course_name ?>"></div>
+                                                    name="coursename" value="<?php echo $course_name ?>" required></div>
                                             <div class="form-group"><label for="newexamcategory"
                                                     class=" form-control-label">New
                                                     Exam Category </label><input type="text" id="newexamcategory"
                                                     class="form-control" name="examname"
-                                                    value="<?php echo $exam_category_name ?>"></div>
+                                                    value="<?php echo $exam_category_name ?>" required></div>
                                             <div class="form-group"><label for="examtime"
                                                     class=" form-control-label">Exam
                                                     Time In Minutes</label><input type="text" id="examtime"
                                                     class="form-control" name="examtime"
-                                                    value="<?php echo $exam_time_in_min ?>">
+                                                    value="<?php echo $exam_time_in_min ?>" required>
                                             </div>
                                             <div class="form-group"><input type="submit" name="submit1"
                                                     value="Update Exam" class="btn btn-success" style="float:right;">
