@@ -31,7 +31,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
 
 <body>
     <?php include 'partials/_dbconnect.php';?>
-    <?php include 'partials/_nav.php';?>
+    <?php include 'partials/_navsearch.php';?>
     <?php
     $id = $_GET['catid'];
     $sql = "SELECT * FROM `categories` WHERE category_id=$id"; 
@@ -97,7 +97,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
 
                 
                 <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Ellaborate Your Concern</label>
+                    <label for="exampleFormControlTextarea1">Elaborate Your Concern</label>
                     <textarea class="form-control" id="desc" name="desc" rows="3"></textarea>
                 </div>
                 <button type="submit" class="btn btn-success">Submit</button>
@@ -119,7 +119,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
         <h1 class="py-2">Browse Questions</h1>
         <?php
     $id = $_GET['catid'];
-    $sql = "SELECT * FROM `threads` WHERE thread_cat_id=$id and status = 1"; 
+    $sql = "SELECT * FROM `threads` WHERE thread_cat_id=$id and status = 1 "; 
     $result = mysqli_query($conn, $sql);
     $noResult = true;
     while($row = mysqli_fetch_assoc($result)){
@@ -132,7 +132,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
         $status = $row['status'];
         
         
-        $sql2 = "SELECT name FROM `users` WHERE sno='$thread_user_id'";
+        $sql2 = "SELECT * FROM `users` WHERE sno='$thread_user_id'";
         $result2 = mysqli_query($conn, $sql2);
         $row2 = mysqli_fetch_assoc($result2);
         
@@ -140,7 +140,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
 
 
         echo '<div class="media my-3">
-            <img src="img/ques3.png" width="54px" class="mr-3" alt="...">
+        <img style="border-radius: 50%; height: 54px; width:54px; padding: 5px;" src="data:images/jpeg;base64,'.base64_encode($row2['images']).'"/>
             <div class="media-body">'.
              '<h5 class="mt-0"> <a class="text-dark" href="threads.php?threadid=' . $id. '">'. $title . ' </a></h5>
                 '. $desc . ' </div>'.'<div class="font-weight-bold my-0"> Asked by: '. $row2['name'] . ' at '. $thread_time. '</div>'.

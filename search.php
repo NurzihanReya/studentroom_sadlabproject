@@ -24,7 +24,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
 
 <body>
     <?php include 'partials/_dbconnect.php'; ?>
-    <?php include 'partials/_nav.php'; ?>
+    <?php include 'partials/_navsearch.php'; ?>
 
 
 
@@ -49,7 +49,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
             
             echo '<div class="result">
             <img src="img/ques3.png" width="30px" class="mr-3" alt="...">
-                        <h4><i><a href="'. $url. '" class="text-dark">'. $title. '</a> </i></h4>
+                        <h4><i><a href="'.$url. '" class="text-dark">'. $title. '</a> </i></h4>
                         <p>'. $desc .'</p>
                   </div>'; 
             }
@@ -59,7 +59,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
                 echo'<div class="jumbotron jumbotron-fluid">
                 <div class="container">
                     <p class="display-4">No Results Found</p>
-                    <p class="lead">Make sure all the words are spelled correctly or try different keywords.</p>
+                    
                 </div>
              </div>';
             }

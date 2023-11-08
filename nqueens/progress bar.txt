@@ -1,0 +1,7 @@
+<div>
+					Progress : <progress max="100" value="0" id="backtracking-progress"></progress>
+				</div>
+
+<div>
+					Progress : <progress max="100" value="0" id="genetic-progress"></progress>
+				</div>

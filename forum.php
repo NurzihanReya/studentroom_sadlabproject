@@ -26,7 +26,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
 <body>
 
     <?php include 'partials/_dbconnect.php'; ?>
-    <?php include 'partials/_nav.php'; ?>
+    <?php include 'partials/_navsearch.php';?>
 
     <?php
         $sql = "SELECT * FROM `threads` WHERE status = 0"; 
